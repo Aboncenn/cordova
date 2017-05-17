@@ -31,8 +31,7 @@ var app = {
     // 'pause', 'resume', etc.
     onDeviceReady: function () {
         this.receivedEvent('deviceready');
-    }
-    , // Update DOM on a Received Event
+    }, // Update DOM on a Received Event
     receivedEvent: function (id) {
         var Latitude = undefined;
         var Longitude = undefined;
@@ -51,8 +50,8 @@ var app = {
             // Get map by using coordinates
         function getMap(latitude, longitude) {
             var mapOptions = {
-                center: new google.maps.LatLng(0, 0)
-                , zoom: 1
+                center: new google.maps.LatLng(34.397, 150.644)
+                , zoom: 8
                 , mapTypeId: google.maps.MapTypeId.ROADMAP
             };
             map = new google.maps.Map(document.getElementById("map"), mapOptions);
