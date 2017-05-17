@@ -18,8 +18,9 @@
     under the License.
 -->
 <html>
-    <head>
-        <!--
+
+<head>
+    <!--
         Customize this policy to fit your own app's needs. For more guidance, see:
             https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
         Some notes:
@@ -28,42 +29,42 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>The Bass'App</title>
-    </head>
-    <body>
-        <div class="container-fluid">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>The Bass'App</title>
+</head>
+
+<body>
+    <div class="container-fluid">
         <header>
-           <nav></nav>
+            <nav></nav>
             <h1>The Bass'App</h1>
             <div class="search"></div>
         </header>
         <div class="nearMe">
             <h2>Soirée Près de moi</h2>
-            <div id="maps"></div>
+            <div id="map"></div>
         </div>
         <div class="Add">
             <form method="post">
-              <h1>Ajouter vos soirées</h1>
+                <h1>Ajouter vos soirées</h1>
                 <input id="soiree" type="textarea" name="content" placeholder="content">
-              <br>
+                <br>
                 <input type="button" value="Ok" onclick="ajout_ingredient()">
-                <input type="button" value="supprime" onclick="supprime_ingredient()">
-            </form>
+                <input type="button" value="supprime" onclick="supprime_ingredient()"> </form>
         </div>
-            <div class="recette2">
-                <h2>Ingredients</h2>
-                <ul id="ingredient1">
-                </ul>
-            </div>
+        <div class="recette2">
+            <h2>Ingredients</h2>
+            <ul id="ingredient1"> </ul>
         </div>
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlPX3asZ0mF3ekepwNVc5w7gN0lQgRyx4"></script>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script src="js/script.js"></script>
-    </body>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlPX3asZ0mF3ekepwNVc5w7gN0lQgRyx4"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
 </html>
