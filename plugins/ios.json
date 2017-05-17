@@ -1,0 +1,30 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-contacts": {
+            "CONTACTS_USAGE_DESCRIPTION": " ",
+            "PACKAGE_NAME": "idApp"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "idApp"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "idApp"
+        },
+        "cordova-plugin-geolocation": {
+            "GEOLOCATION_USAGE_DESCRIPTION": " ",
+            "PACKAGE_NAME": "idApp"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "idApp"
+        }
+    }
+}
