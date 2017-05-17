@@ -42,7 +42,9 @@
         <header>
             <nav></nav>
             <h1>The Bass'App</h1>
-            <div class="search"></div>
+            <div class="search">
+            
+            </div>
         </header>
         <div class="nearMe">
             <h2>Soirée Près de moi</h2>
@@ -60,11 +62,20 @@
             <h2>Ingredients</h2>
             <ul id="ingredient1"> </ul>
         </div>
-    </div>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlPX3asZ0mF3ekepwNVc5w7gN0lQgRyx4"></script>
+    </div> 
+     <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeZFF3suEsSsVG4KrseSWPeV0XFW6Cvvk "async defer></script>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
-    <script src="js/script.js"></script>
+    <script script-src="js/script.js"></script>
 </body>
 
 </html>
